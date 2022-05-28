@@ -25,7 +25,7 @@ SECRET_KEY = 'j4vm=lp#1i^_cy9w%ild6+40tdro)9r2bk746*c^*g^*s2*e3a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
