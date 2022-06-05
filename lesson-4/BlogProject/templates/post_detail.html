@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="dew">
+            <div class="dew4">
+                <div class="dew1">
+                     <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> </h3>
+                    <p><b>{{ post.author }}</b><i class="fa-solid fa-calendar" style="padding: 3px;"></i> {{ post.created_at }} <br>{{ post.body}}</p>
+                </div>
+            </div>
+</section>
+<footer>
+    <button><a href="{% url 'post_edit' post.pk %}">Update</a></button><button><a href="{% url 'post_del' post.pk %}">Delete</a></button>
+</footer>
+{% endblock content %}

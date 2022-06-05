@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for post in object_list %}
+        <section class="dew">
+            <div class="dew4">
+                <div class="dew1">
+                     <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> </h3>
+                    <p><i class="fa-solid fa-calendar" style="padding: 3px;"></i> {{ post.created_at }} <br>{{ post.body | slice:":100" }}</p>
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+     <div class="clearfix"></div>
+{% endblock content %}
