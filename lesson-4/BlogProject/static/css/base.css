@@ -56,6 +56,20 @@ h3{
     border-bottom: 0.1px solid rgb(82, 79, 79);
 
 }
+
+.but1{
+ margin-left: 900px;
+
+ 
+}
+.logs{
+    position: relative;
+
+   float: right;
+   padding-right: 50px;
+   margin-bottom: 30px;
+
+}
 button:hover{
     background-color: rgba(73, 172, 78, 0.979) ;
 }

@@ -12,8 +12,15 @@
 <body>
     <header>
          <div class="navbar">
-            <h2><a href="{% url 'home' %}">KamoliddinDew Blog</a> <button class="but" type="btn"><a href="{% url 'post_new' %}">Create new post</a></button></h2>
-        </div>
+            <h2><a href="{% url 'home' %}">KamoliddinDew Blog</a> <button class="but1" type="btn"><a href="{% url 'post_new' %}">Create new post</a></button></h2>
+            <div class="logs">
+                {% if user.is_authenticated %}
+                    <p>Welcome {{ user.username }}!|<a href="{% url 'logout' %}">Log Out</a></p>
+                {% else %}
+                    <p><a href="{% url 'login' %}">Log In</a>|<a href="{% url 'signup'%}">Sign Up</a></p>
+                {% endif %}
+            </div>
+         </div>
     </header>
 
 <div>
